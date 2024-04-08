@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal{
+            width: 250px;
+            height: 180px;
+            border: 1px solid blue;
+            margin-left: 300px;
+            margin-top: 15px;
+            
+            
+        }
+        .inner-modal{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+        
+
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            text-align: center;
+            width: 100px;
+            padding: 10px;
+            
+        }
+        #openbtn{
+            margin-left: 200px;
+        }
+        .open{
+            display: none;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <button id="openbtn">Open</button>
+    <div id="modal" class="modal open">
+        <div class="inner-modal">
+            <p>Welcome</p>
+            <h2>Devilal panchal Project</h2>
+   
+
+            <button id="closebtn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

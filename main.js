@@ -53,8 +53,8 @@ function showNotification(message,color,top){
     div.style.position = `relative`
     div.style.top = `${top}%`
     div.style.left = `2rem`
-    div.style.width =`20rem`
-    div.style.height =`20rem`
+    div.style.width =`10rem`
+    div.style.height =`10rem`
 
     setTimeout(()=>{
         div.remove()

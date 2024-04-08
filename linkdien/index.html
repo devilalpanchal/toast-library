@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="https://github.com/devilalpanchal/Second-Class-text-of-java-script/tree/main/Student%20Portal" id="popup-link">Click here to open pop-up</a>
+    <style>
+#popup-window {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}   
+    </style>
+</head>
+<body>
+
+
+    <div id="popup-window">
+        <h1>Pop-up Window</h1>
+        <p>This is a pop-up window.</p>
+        <button id="close-button">Close</button>
+      </div>   
+
+
+
+      <script>
+        // Get the elements by their ID
+        var popupLink = document.getElementById("popup-link");
+        var popupWindow = document.getElementById("popup-window");
+        var closeButton = document.getElementById("close-button");
+
+
+        // Show the pop-up window when the link is clicked
+        popupLink.addEventListener("click", function(event) {
+          event.preventDefault();
+          popupWindow.style.display = "block";
+        });
+        
+        // Hide the pop-up window when the close button is clicked
+        closeButton.addEventListener("click", function() {
+          popupWindow.style.display = "none";
+        });
+      </script>   
+</body>
+</html>
